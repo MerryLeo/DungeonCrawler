@@ -1,0 +1,22 @@
+[
+{
+  "directory": "C:/_dev/C/DungeonCrawler/dungeon_crawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\main.c.obj -c C:\\_dev\\C\\DungeonCrawler\\dungeon_crawler\\main.c",
+  "file": "C:/_dev/C/DungeonCrawler/dungeon_crawler/main.c"
+},
+{
+  "directory": "C:/_dev/C/DungeonCrawler/dungeon_crawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\room.c.obj -c C:\\_dev\\C\\DungeonCrawler\\dungeon_crawler\\room.c",
+  "file": "C:/_dev/C/DungeonCrawler/dungeon_crawler/room.c"
+},
+{
+  "directory": "C:/_dev/C/DungeonCrawler/dungeon_crawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\game.c.obj -c C:\\_dev\\C\\DungeonCrawler\\dungeon_crawler\\game.c",
+  "file": "C:/_dev/C/DungeonCrawler/dungeon_crawler/game.c"
+},
+{
+  "directory": "C:/_dev/C/DungeonCrawler/dungeon_crawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\utility.c.obj -c C:\\_dev\\C\\DungeonCrawler\\dungeon_crawler\\utility.c",
+  "file": "C:/_dev/C/DungeonCrawler/dungeon_crawler/utility.c"
+}
+]

@@ -1,0 +1,10 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "stdlib.h": "c",
+        "map.h": "c",
+        "stdio.h": "c",
+        "room.h": "c",
+        "time.h": "c"
+    }
+}
