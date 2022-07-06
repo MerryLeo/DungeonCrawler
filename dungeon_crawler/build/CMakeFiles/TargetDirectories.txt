@@ -27,6 +27,7 @@ C:/_dev/C/DungeonCrawler/dungeon_crawler/build/CMakeFiles/ContinuousCoverage.dir
 C:/_dev/C/DungeonCrawler/dungeon_crawler/build/CMakeFiles/ContinuousMemCheck.dir
 C:/_dev/C/DungeonCrawler/dungeon_crawler/build/CMakeFiles/ContinuousSubmit.dir
 C:/_dev/C/DungeonCrawler/dungeon_crawler/build/CMakeFiles/DungeonCrawler.dir
+C:/_dev/C/DungeonCrawler/dungeon_crawler/build/CMakeFiles/item.h.dir
 C:/_dev/C/DungeonCrawler/dungeon_crawler/build/CMakeFiles/package.dir
 C:/_dev/C/DungeonCrawler/dungeon_crawler/build/CMakeFiles/package_source.dir
 C:/_dev/C/DungeonCrawler/dungeon_crawler/build/CMakeFiles/test.dir

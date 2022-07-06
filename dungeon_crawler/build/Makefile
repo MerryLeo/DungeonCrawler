@@ -522,6 +522,19 @@ DungeonCrawler/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/build
 .PHONY : DungeonCrawler/fast
 
+#=============================================================================
+# Target rules for targets named item.h
+
+# Build rule for target.
+item.h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 item.h
+.PHONY : item.h
+
+# fast build rule for target.
+item.h/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/build
+.PHONY : item.h/fast
+
 game.obj: game.c.obj
 .PHONY : game.obj
 
@@ -545,6 +558,30 @@ game.s: game.c.s
 game.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/game.c.s
 .PHONY : game.c.s
+
+item.obj: item.c.obj
+.PHONY : item.obj
+
+# target to build an object file
+item.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/item.c.obj
+.PHONY : item.c.obj
+
+item.i: item.c.i
+.PHONY : item.i
+
+# target to preprocess a source file
+item.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/item.c.i
+.PHONY : item.c.i
+
+item.s: item.c.s
+.PHONY : item.s
+
+# target to generate assembly for a file
+item.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/item.c.s
+.PHONY : item.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -658,9 +695,13 @@ help:
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
 	@echo ... DungeonCrawler
+	@echo ... item.h
 	@echo ... game.obj
 	@echo ... game.i
 	@echo ... game.s
+	@echo ... item.obj
+	@echo ... item.i
+	@echo ... item.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

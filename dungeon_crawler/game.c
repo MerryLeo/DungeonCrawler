@@ -16,7 +16,7 @@ void initialise_game(GAME *game)
         width = generate_number(MIN_ROOM_WIDTH, MAX_ROOM_WIDTH);
         height = generate_number(MIN_ROOM_HEIGHT, MAX_ROOM_HEIGHT);
         ROOM *room = &(game->rooms[room_num]);
-        generate_empty_room(room, width, height);
+        create_empty_room(room, width, height);
         add_walls(room);
     }
 }

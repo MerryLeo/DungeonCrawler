@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = C:\_dev\C\DungeonCrawler\dungeon_crawler\build
 
 # The main recursive "all" target.
 all: CMakeFiles/DungeonCrawler.dir/all
+all: CMakeFiles/item.h.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -99,6 +100,7 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/DungeonCrawler.dir/clean
+clean: CMakeFiles/item.h.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -854,6 +856,32 @@ DungeonCrawler: CMakeFiles/DungeonCrawler.dir/rule
 CMakeFiles/DungeonCrawler.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/clean
 .PHONY : CMakeFiles/DungeonCrawler.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/item.h.dir
+
+# All Build rule for target.
+CMakeFiles/item.h.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=6,7 "Built target item.h"
+.PHONY : CMakeFiles/item.h.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/item.h.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/item.h.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 0
+.PHONY : CMakeFiles/item.h.dir/rule
+
+# Convenience name for target.
+item.h: CMakeFiles/item.h.dir/rule
+.PHONY : item.h
+
+# clean rule for target.
+CMakeFiles/item.h.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/clean
+.PHONY : CMakeFiles/item.h.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

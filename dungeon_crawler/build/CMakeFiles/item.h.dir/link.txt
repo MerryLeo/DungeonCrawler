@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\item.h.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\item.h.dir/objects.a @CMakeFiles\item.h.dir\objects1.rsp
+C:\MinGW\bin\mingw32-gcc.exe -g -Wl,--whole-archive CMakeFiles\item.h.dir/objects.a -Wl,--no-whole-archive -o item.h.exe -Wl,--out-implib,libitem.h.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\item.h.dir\linklibs.rsp
