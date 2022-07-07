@@ -1,15 +1,19 @@
+/*  
+    ROOM is used to contain useful information about its content,
+    and methods to create rooms
+*/
+
 #include "utility.h"
 #include "item.h"
-#include "torch.h"
 
 #ifndef ROOM_H
 #define ROOM_H
 
 // ROOM Size
-#define MAX_ROOM_WIDTH 20
-#define MIN_ROOM_WIDTH 10
-#define MAX_ROOM_HEIGHT 20
-#define MIN_ROOM_HEIGHT 10
+#define MAX_ROOM_WIDTH 30
+#define MIN_ROOM_WIDTH 5
+#define MAX_ROOM_HEIGHT 30
+#define MIN_ROOM_HEIGHT 5
 
 // Structures characters
 #define EMPTY_TILE_CODE 249
@@ -19,10 +23,7 @@
 #define TOP_RIGHT_CORNER 191
 #define BOTTOM_LEFT_CORNER 192
 #define BOTTOM_RIGHT_CORNER 217
-
-typedef struct {
-    int locked;
-} DOOR;
+#define DOOR_SYMBOL ' '
 
 typedef enum {
     not_a_wall = 0,
@@ -42,9 +43,24 @@ typedef enum {
     out_of_bound = 4
 } TILE_TYPE;
 
+typedef enum {
+    none = 0,
+    main_room = 1,
+    secondary_room = 2,
+    storage = 3,
+    trap = 4
+} ROOM_TYPE;
+
+typedef struct {
+    void *dest;
+    int opened;
+    int locked;
+} DOOR;
+
 typedef struct {
     int light_level;
     TILE_TYPE type;
+    DESCRIPTION *description;
     WALL_TYPE wall_type;
     TORCH *torch;
     ITEM *item;
@@ -59,12 +75,14 @@ typedef struct {
 } ROOM;
 
 void create_empty_room(ROOM *room, const int width, const int height);
-void remove_chunk_from_room(ROOM *room, int startRow, int endRow, int startCol, int endCol);
+void remove_tiles(ROOM *room, int start_row, int end_row, int start_col, int end_col);
 int is_tile_wall(ROOM room, ROOM_TILE *tile, const int row, const int col);
 unsigned int get_wall_char(WALL_TYPE type);
 void add_walls(ROOM *room);
-void add_doors(ROOM *room);
+int add_doors(ROOM *source, ROOM *dest);
+void create_door(DOOR *door, ROOM_TILE *tile, const ROOM *dest);
 void create_tile(ROOM_TILE *tile, const unsigned char symbol, TILE_TYPE type);
+int try_get_random_wall(const ROOM *room, ROOM_TILE *tile);
 void print_room(ROOM room);
 void delete_room(ROOM *room);
 

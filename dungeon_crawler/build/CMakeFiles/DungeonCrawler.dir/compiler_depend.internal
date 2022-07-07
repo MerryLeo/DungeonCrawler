@@ -16,7 +16,6 @@ CMakeFiles/DungeonCrawler.dir/game.c.obj
  C:/_dev/C/DungeonCrawler/dungeon_crawler/room.h
  C:/_dev/C/DungeonCrawler/dungeon_crawler/utility.h
  C:/_dev/C/DungeonCrawler/dungeon_crawler/item.h
- C:/_dev/C/DungeonCrawler/dungeon_crawler/torch.h
 
 CMakeFiles/DungeonCrawler.dir/main.c.obj
  C:/_dev/C/DungeonCrawler/dungeon_crawler/main.c
@@ -26,11 +25,10 @@ CMakeFiles/DungeonCrawler.dir/main.c.obj
  C:/MinGW/include/w32api.h
  C:/MinGW/include/sdkddkver.h
  C:/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h
+ C:/_dev/C/DungeonCrawler/dungeon_crawler/game.h
  C:/_dev/C/DungeonCrawler/dungeon_crawler/room.h
  C:/_dev/C/DungeonCrawler/dungeon_crawler/utility.h
  C:/_dev/C/DungeonCrawler/dungeon_crawler/item.h
- C:/_dev/C/DungeonCrawler/dungeon_crawler/torch.h
- C:/_dev/C/DungeonCrawler/dungeon_crawler/game.h
 
 CMakeFiles/DungeonCrawler.dir/room.c.obj
  C:/_dev/C/DungeonCrawler/dungeon_crawler/room.c
@@ -46,7 +44,6 @@ CMakeFiles/DungeonCrawler.dir/room.c.obj
  C:/_dev/C/DungeonCrawler/dungeon_crawler/room.h
  C:/_dev/C/DungeonCrawler/dungeon_crawler/utility.h
  C:/_dev/C/DungeonCrawler/dungeon_crawler/item.h
- C:/_dev/C/DungeonCrawler/dungeon_crawler/torch.h
 
 CMakeFiles/DungeonCrawler.dir/utility.c.obj
  C:/_dev/C/DungeonCrawler/dungeon_crawler/utility.c
@@ -57,6 +54,9 @@ CMakeFiles/DungeonCrawler.dir/utility.c.obj
  C:/MinGW/include/w32api.h
  C:/MinGW/include/sdkddkver.h
  C:/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h
+ C:/MinGW/include/stdio.h
+ C:/MinGW/include/sys/types.h
+ C:/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h
  C:/MinGW/include/time.h
  C:/MinGW/include/sys/types.h
 

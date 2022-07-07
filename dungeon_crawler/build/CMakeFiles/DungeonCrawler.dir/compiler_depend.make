@@ -14,8 +14,7 @@ CMakeFiles/DungeonCrawler.dir/game.c.obj: ../game.c \
   ../game.h \
   ../room.h \
   ../utility.h \
-  ../item.h \
-  ../torch.h
+  ../item.h
 
 CMakeFiles/DungeonCrawler.dir/main.c.obj: ../main.c \
   C:/MinGW/include/stdlib.h \
@@ -24,11 +23,10 @@ CMakeFiles/DungeonCrawler.dir/main.c.obj: ../main.c \
   C:/MinGW/include/w32api.h \
   C:/MinGW/include/sdkddkver.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  ../game.h \
   ../room.h \
   ../utility.h \
-  ../item.h \
-  ../torch.h \
-  ../game.h
+  ../item.h
 
 CMakeFiles/DungeonCrawler.dir/room.c.obj: ../room.c \
   C:/MinGW/include/stdlib.h \
@@ -42,8 +40,7 @@ CMakeFiles/DungeonCrawler.dir/room.c.obj: ../room.c \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
   ../room.h \
   ../utility.h \
-  ../item.h \
-  ../torch.h
+  ../item.h
 
 CMakeFiles/DungeonCrawler.dir/utility.c.obj: ../utility.c \
   ../utility.h \
@@ -53,6 +50,9 @@ CMakeFiles/DungeonCrawler.dir/utility.c.obj: ../utility.c \
   C:/MinGW/include/w32api.h \
   C:/MinGW/include/sdkddkver.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
+  C:/MinGW/include/stdio.h \
+  C:/MinGW/include/sys/types.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
   C:/MinGW/include/time.h \
   C:/MinGW/include/sys/types.h
 
@@ -84,8 +84,6 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h:
 ../utility.h:
 
 ../item.h:
-
-../torch.h:
 
 ../main.c:
 

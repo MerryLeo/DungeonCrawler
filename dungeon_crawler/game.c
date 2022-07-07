@@ -4,7 +4,7 @@
 #include "room.h"
 #include "utility.h"
 
-void initialise_game(GAME *game)
+void create_game(GAME *game)
 {
     // ROOM dimensions
     int width;
@@ -18,31 +18,29 @@ void initialise_game(GAME *game)
         width = generate_number(MIN_ROOM_WIDTH, MAX_ROOM_WIDTH);
         height = generate_number(MIN_ROOM_HEIGHT, MAX_ROOM_HEIGHT);
         remove_chunk = clamp01(generate_number(-5, 5));
+
         ROOM *room = &(game->rooms[room_num]);
         create_empty_room(room, width, height);
-
         if (remove_chunk == TRUE)
         {
             position = generate_number(0, 4);
             switch (position)
             {
                 case 0:
-                    remove_chunk_from_room(room, 0, height / 2, 0, width / 2);
+                    remove_tiles(room, 0, height / 2, 0, width / 2);
                     break;
                 case 1:
-                    remove_chunk_from_room(room, 0, height / 2, width / 2, width - 1);
+                    remove_tiles(room, 0, height / 2, width / 2, width - 1);
                     break;
                 case 2:
-                    remove_chunk_from_room(room, height / 2, height - 1, 0, width / 2);
+                    remove_tiles(room, height / 2, height - 1, 0, width / 2);
                     break;
                 case 3:
-                    remove_chunk_from_room(room, height / 2, height - 1, width / 2, width - 1);
+                    remove_tiles(room, height / 2, height - 1, width / 2, width - 1);
                     break;
             }
             
         }
-            
-
         add_walls(room);
     }
 }

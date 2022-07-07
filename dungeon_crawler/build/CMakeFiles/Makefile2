@@ -64,7 +64,7 @@ CMAKE_BINARY_DIR = C:\_dev\C\DungeonCrawler\dungeon_crawler\build
 # The main recursive "all" target.
 all: CMakeFiles/DungeonCrawler.dir/all
 all: CMakeFiles/item.h.dir/all
-all: CMakeFiles/torch.h.dir/all
+all: CMakeFiles/light.h.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -102,7 +102,7 @@ clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/DungeonCrawler.dir/clean
 clean: CMakeFiles/item.h.dir/clean
-clean: CMakeFiles/torch.h.dir/clean
+clean: CMakeFiles/light.h.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -886,30 +886,30 @@ CMakeFiles/item.h.dir/clean:
 .PHONY : CMakeFiles/item.h.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/torch.h.dir
+# Target rules for target CMakeFiles/light.h.dir
 
 # All Build rule for target.
-CMakeFiles/torch.h.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\torch.h.dir\build.make CMakeFiles/torch.h.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\torch.h.dir\build.make CMakeFiles/torch.h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=8,9 "Built target torch.h"
-.PHONY : CMakeFiles/torch.h.dir/all
+CMakeFiles/light.h.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\light.h.dir\build.make CMakeFiles/light.h.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\light.h.dir\build.make CMakeFiles/light.h.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=8,9 "Built target light.h"
+.PHONY : CMakeFiles/light.h.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/torch.h.dir/rule: cmake_check_build_system
+CMakeFiles/light.h.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/torch.h.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/light.h.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 0
-.PHONY : CMakeFiles/torch.h.dir/rule
+.PHONY : CMakeFiles/light.h.dir/rule
 
 # Convenience name for target.
-torch.h: CMakeFiles/torch.h.dir/rule
-.PHONY : torch.h
+light.h: CMakeFiles/light.h.dir/rule
+.PHONY : light.h
 
 # clean rule for target.
-CMakeFiles/torch.h.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\torch.h.dir\build.make CMakeFiles/torch.h.dir/clean
-.PHONY : CMakeFiles/torch.h.dir/clean
+CMakeFiles/light.h.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\light.h.dir\build.make CMakeFiles/light.h.dir/clean
+.PHONY : CMakeFiles/light.h.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

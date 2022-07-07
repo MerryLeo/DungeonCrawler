@@ -24,7 +24,7 @@ void create_empty_room(ROOM *room, const int width, const int height)
 // Remove a chunk of the room to make a non-rectangular shaped room
 // startRow, endRow, startCol, endCol are indices of positions
 // to remove the chunk
-void remove_chunk_from_room(ROOM *room, int startRow, int endRow, int startCol, int endCol)
+void remove_tiles(ROOM *room, int startRow, int endRow, int startCol, int endCol)
 {
     int room_width = room->width;
     int row, col;
@@ -47,7 +47,7 @@ void remove_chunk_from_room(ROOM *room, int startRow, int endRow, int startCol, 
         endCol = temp;
     }
 
-    // Mark tiles in the chunk as out-of-bound
+    // Mark tiles in the chunk as out of bound
     for (row = startRow; row <= endRow; row++)
     {
         for (col = startCol; col <= endCol; col++)
@@ -188,16 +188,118 @@ void add_walls(ROOM *room)
     }
 }
 
+// Add door from source to dest
+int add_doors(ROOM *source, ROOM *dest)
+{
+    ROOM_TILE *tile;
+    int attempt;
+    attempt = try_get_random_wall(source, tile);
+    if (attempt == ERROR)
+        return ERROR;
+    create_door(tile->door, tile, dest);
+    attempt = try_get_random_wall(dest, tile);
+    if (attempt == ERROR)
+        return ERROR;
+    create_door(tile->door, tile, source);
+}
+
+void create_door(DOOR *room_door, ROOM_TILE *tile, const ROOM *dest)
+{
+    tile->tile_char = DOOR_SYMBOL;
+    tile->wall_type = not_a_wall;
+    tile->type = door;
+    room_door->dest = (ROOM*)dest;
+    room_door->locked = 0;
+    room_door->opened = 0;
+}
+
 // Create a single tile
 void create_tile(ROOM_TILE *tile, const unsigned char symbol, TILE_TYPE type) 
 {
     tile->door = NULL;
+    tile->description = NULL;
     tile->item = NULL;
     tile->torch = NULL;
     tile->wall_type = not_a_wall;
     tile->light_level = 0;
     tile->tile_char = symbol;
     tile->type = type;
+}
+
+// Get a random non-corner wall from the room
+int try_get_random_wall(const ROOM *room, ROOM_TILE *tile)
+{
+    int room_width = room->width;
+    int room_height = room->height;
+    int row, col, choice; 
+    ROOM_TILE *wall_tile;
+
+    // Try to find a random wall
+    while (1)
+    {
+        choice = clamp01(generate_number(-5, 5));
+
+        // Choose between a random row or a random column
+        if (choice == 1)
+        {
+            choice = clamp01(generate_number(-5, 5));
+            row = generate_number(1, room_height - 1);
+            if (choice == 1)
+            {
+                for (col = 0; col < room_width; col++)
+                {
+                    tile = &(room->tiles[row * room_width + col]);
+                    if (tile->type == wall && tile->wall_type == horizontal_wall || tile->wall_type == vertical_wall)
+                    {
+                        tile = wall_tile;
+                        return SUCCESS;
+                    }
+                }
+            }
+            else
+            {
+                for (col = room_width - 1; col >= 0; col--)
+                {
+                    tile = &(room->tiles[row * room_width + col]);
+                    if (tile->type == wall && tile->wall_type == horizontal_wall || tile->wall_type == vertical_wall)
+                    {
+                        tile = wall_tile;
+                        return SUCCESS;
+                    }
+                }
+            }
+        }
+        else
+        {
+            choice = clamp01(generate_number(-5, 5));
+            col = generate_number(1, room_width - 1);
+            if (choice == 1)
+            {
+                for (row = 0; row < room_height; row++)
+                {
+                    tile = &(room->tiles[row * room_width + col]);
+                    if (tile->type == wall && tile->wall_type == horizontal_wall || tile->wall_type == vertical_wall)
+                    {
+                        tile = wall_tile;
+                        return SUCCESS;
+                    }
+                }
+            }
+            else 
+            {
+                for (row = room_height - 1; row >= 0; row--)
+                {
+                    tile = &(room->tiles[row * room_width + col]);
+                    if (tile->type == wall && tile->wall_type == horizontal_wall || tile->wall_type == vertical_wall)
+                    {
+                        tile = wall_tile;
+                        return SUCCESS;
+                    }
+                }
+            }
+        }
+        return ERROR;
+    }
 }
 
 // Print every tiles in the room

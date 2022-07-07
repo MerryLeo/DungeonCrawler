@@ -1,5 +1,6 @@
 #include "utility.h"
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 
 time_t now;
@@ -27,6 +28,15 @@ int remape_value(int value, int min1, int max1, int min2, int max2)
     return (int)new_value;
 }
 
+// Print text with a color
+void print_colored(char msg[], char color[])
+{
+    printf(color);
+    printf(msg);
+    printf(COLOR_DEFAULT);
+}
+
+// Clamp a value between 0 and 1
 int clamp01(int value)
 {
     if (value < 0)

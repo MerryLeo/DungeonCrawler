@@ -1,6 +1,4 @@
 #include <stdlib.h>
-#include <stdlib.h>
-#include "room.h"
 #include "game.h"
 
 int main()
@@ -8,7 +6,7 @@ int main()
     GAME my_game;
     
     // Initialise the game
-    initialise_game(&my_game);
+    create_game(&my_game);
 
     // Play the game
     play_game(&my_game);

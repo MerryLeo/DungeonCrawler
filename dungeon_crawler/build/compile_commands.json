@@ -26,7 +26,7 @@
 },
 {
   "directory": "C:/_dev/C/DungeonCrawler/dungeon_crawler/build",
-  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\torch.h.dir\\torch.c.obj -c C:\\_dev\\C\\DungeonCrawler\\dungeon_crawler\\torch.c",
-  "file": "C:/_dev/C/DungeonCrawler/dungeon_crawler/torch.c"
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\light.h.dir\\light.c.obj -c C:\\_dev\\C\\DungeonCrawler\\dungeon_crawler\\light.c",
+  "file": "C:/_dev/C/DungeonCrawler/dungeon_crawler/light.c"
 }
 ]

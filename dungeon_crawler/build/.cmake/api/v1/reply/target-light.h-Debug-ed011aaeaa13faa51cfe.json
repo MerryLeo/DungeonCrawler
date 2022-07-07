@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "torch.h.exe"
+			"path" : "light.h.exe"
 		},
 		{
-			"path" : "torch.h.pdb"
+			"path" : "light.h.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -48,7 +48,7 @@
 			]
 		}
 	],
-	"id" : "torch.h::@6890427a1f51a3e7e1df",
+	"id" : "light.h::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -68,8 +68,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "torch.h",
-	"nameOnDisk" : "torch.h.exe",
+	"name" : "light.h",
+	"nameOnDisk" : "light.h.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,7 +90,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "torch.c",
+			"path" : "light.c",
 			"sourceGroupIndex" : 0
 		}
 	],

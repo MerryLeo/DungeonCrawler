@@ -6,7 +6,7 @@ enable_testing()
 
 add_executable(DungeonCrawler main.c room.h room.c game.h game.c utility.h utility.c)
 add_executable(item.h item.c)
-add_executable(torch.h torch.c)
+add_executable(light.h light.c)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
