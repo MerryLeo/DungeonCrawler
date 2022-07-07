@@ -88,4 +88,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "CMakeFiles/DungeonCrawler.dir/DependInfo.cmake"
   "CMakeFiles/item.h.dir/DependInfo.cmake"
+  "CMakeFiles/torch.h.dir/DependInfo.cmake"
   )

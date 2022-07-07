@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <stdlib.h>
+#include "room.h"
 #include "game.h"
 
 int main()

@@ -26,3 +26,12 @@ int remape_value(int value, int min1, int max1, int min2, int max2)
     float new_value = ((value - min1) / (float)step1) * step2 + min2;
     return (int)new_value;
 }
+
+int clamp01(int value)
+{
+    if (value < 0)
+        value = 0;
+    else if (value > 1)
+        value = 1;
+    return value;
+}

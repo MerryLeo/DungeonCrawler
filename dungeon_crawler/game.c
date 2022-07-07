@@ -6,17 +6,43 @@
 
 void initialise_game(GAME *game)
 {
-    // Room dimensions
+    // ROOM dimensions
     int width;
     int height;
+    int remove_chunk = FALSE;
+    int position;
 
     // Creates every room
     for (int room_num = 0; room_num < NUMBER_OF_ROOM; room_num++)
     {
         width = generate_number(MIN_ROOM_WIDTH, MAX_ROOM_WIDTH);
         height = generate_number(MIN_ROOM_HEIGHT, MAX_ROOM_HEIGHT);
+        remove_chunk = clamp01(generate_number(-5, 5));
         ROOM *room = &(game->rooms[room_num]);
         create_empty_room(room, width, height);
+
+        if (remove_chunk == TRUE)
+        {
+            position = generate_number(0, 4);
+            switch (position)
+            {
+                case 0:
+                    remove_chunk_from_room(room, 0, height / 2, 0, width / 2);
+                    break;
+                case 1:
+                    remove_chunk_from_room(room, 0, height / 2, width / 2, width - 1);
+                    break;
+                case 2:
+                    remove_chunk_from_room(room, height / 2, height - 1, 0, width / 2);
+                    break;
+                case 3:
+                    remove_chunk_from_room(room, height / 2, height - 1, width / 2, width - 1);
+                    break;
+            }
+            
+        }
+            
+
         add_walls(room);
     }
 }

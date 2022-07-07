@@ -535,6 +535,19 @@ item.h/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/build
 .PHONY : item.h/fast
 
+#=============================================================================
+# Target rules for targets named torch.h
+
+# Build rule for target.
+torch.h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 torch.h
+.PHONY : torch.h
+
+# fast build rule for target.
+torch.h/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\torch.h.dir\build.make CMakeFiles/torch.h.dir/build
+.PHONY : torch.h/fast
+
 game.obj: game.c.obj
 .PHONY : game.obj
 
@@ -631,6 +644,30 @@ room.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/room.c.s
 .PHONY : room.c.s
 
+torch.obj: torch.c.obj
+.PHONY : torch.obj
+
+# target to build an object file
+torch.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\torch.h.dir\build.make CMakeFiles/torch.h.dir/torch.c.obj
+.PHONY : torch.c.obj
+
+torch.i: torch.c.i
+.PHONY : torch.i
+
+# target to preprocess a source file
+torch.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\torch.h.dir\build.make CMakeFiles/torch.h.dir/torch.c.i
+.PHONY : torch.c.i
+
+torch.s: torch.c.s
+.PHONY : torch.s
+
+# target to generate assembly for a file
+torch.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\torch.h.dir\build.make CMakeFiles/torch.h.dir/torch.c.s
+.PHONY : torch.c.s
+
 utility.obj: utility.c.obj
 .PHONY : utility.obj
 
@@ -696,6 +733,7 @@ help:
 	@echo ... NightlyUpdate
 	@echo ... DungeonCrawler
 	@echo ... item.h
+	@echo ... torch.h
 	@echo ... game.obj
 	@echo ... game.i
 	@echo ... game.s
@@ -708,6 +746,9 @@ help:
 	@echo ... room.obj
 	@echo ... room.i
 	@echo ... room.s
+	@echo ... torch.obj
+	@echo ... torch.i
+	@echo ... torch.s
 	@echo ... utility.obj
 	@echo ... utility.i
 	@echo ... utility.s
