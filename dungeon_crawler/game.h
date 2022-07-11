@@ -8,7 +8,7 @@
 #define START_MSG "What do you want to do?\n"
 #define WELCOME "Welcome to my dungeon crawler!\n\n"
 
-typedef struct game {
+typedef struct {
     ROOM rooms[NUMBER_OF_ROOM];
 } GAME;
 

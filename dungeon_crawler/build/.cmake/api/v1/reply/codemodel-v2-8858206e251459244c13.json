@@ -43,9 +43,7 @@
 						25,
 						26,
 						27,
-						28,
-						29,
-						30
+						28
 					]
 				}
 			],
@@ -88,9 +86,7 @@
 						25,
 						26,
 						27,
-						28,
-						29,
-						30
+						28
 					]
 				}
 			],
@@ -162,7 +158,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "DungeonCrawler::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DungeonCrawler-Debug-9c1f2b1bed8e8dcfd369.json",
+					"jsonFile" : "target-DungeonCrawler-Debug-3088a7b98160fd3e393b.json",
 					"name" : "DungeonCrawler",
 					"projectIndex" : 0
 				},
@@ -297,20 +293,6 @@
 					"id" : "NightlyUpdate::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-NightlyUpdate-Debug-c8a6a9e0bad149390dc5.json",
 					"name" : "NightlyUpdate",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "item.h::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-item.h-Debug-d83efeadfcfaca77f345.json",
-					"name" : "item.h",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "light.h::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-light.h-Debug-ed011aaeaa13faa51cfe.json",
-					"name" : "light.h",
 					"projectIndex" : 0
 				}
 			]

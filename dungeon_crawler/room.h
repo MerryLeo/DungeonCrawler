@@ -1,7 +1,5 @@
-/*  
-    ROOM is used to contain useful information about its content,
-    and methods to create rooms
-*/
+// ROOM is used to contain useful information about its content,
+// and methods to create rooms
 
 #include "utility.h"
 #include "item.h"
@@ -10,9 +8,9 @@
 #define ROOM_H
 
 // ROOM Size
-#define MAX_ROOM_WIDTH 30
+#define MAX_ROOM_WIDTH 25
 #define MIN_ROOM_WIDTH 5
-#define MAX_ROOM_HEIGHT 30
+#define MAX_ROOM_HEIGHT 15
 #define MIN_ROOM_HEIGHT 5
 
 // Structures characters
@@ -74,15 +72,15 @@ typedef struct {
     int height;
 } ROOM;
 
-void create_empty_room(ROOM *room, const int width, const int height);
-void remove_tiles(ROOM *room, int start_row, int end_row, int start_col, int end_col);
+int create_empty_room(ROOM *room, const int width, const int height);
+void remove_tiles(ROOM *room, RECTANGLE tiles_to_remove);
 int is_tile_wall(ROOM room, ROOM_TILE *tile, const int row, const int col);
 unsigned int get_wall_char(WALL_TYPE type);
 void add_walls(ROOM *room);
 int add_doors(ROOM *source, ROOM *dest);
 void create_door(DOOR *door, ROOM_TILE *tile, const ROOM *dest);
 void create_tile(ROOM_TILE *tile, const unsigned char symbol, TILE_TYPE type);
-int try_get_random_wall(const ROOM *room, ROOM_TILE *tile);
+int get_random_wall(const ROOM *room, ROOM_TILE *tile);
 void print_room(ROOM room);
 void delete_room(ROOM *room);
 

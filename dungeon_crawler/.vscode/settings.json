@@ -2,6 +2,7 @@
     "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
         "room.h": "c",
-        "utility.h": "c"
+        "utility.h": "c",
+        "dungeon.h": "c"
     }
 }

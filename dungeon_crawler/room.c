@@ -2,12 +2,17 @@
 #include <stdio.h>
 #include "room.h"
 #include "utility.h"
+#include "exception.h"
 
 // Create an empty rectangular room with dimensions
 // width and height with no walls
-void create_empty_room(ROOM *room, const int width, const int height)
+// Return ERROR if memory could not be allocated, otherwise
+// returns SUCCESS
+int create_empty_room(ROOM *room, const int width, const int height)
 {
-    room->tiles = (ROOM_TILE*)malloc(width * height * sizeof(ROOM_TILE));
+    room->tiles = (ROOM_TILE*)calloc(width * height, sizeof(ROOM_TILE));
+    if (room->tiles == NULL)
+        return ERROR_NULL_PTR;
     ROOM_TILE *tile;
     for (int row = 0; row < height; row++)
     {
@@ -19,38 +24,29 @@ void create_empty_room(ROOM *room, const int width, const int height)
     }
     room->width = width;
     room->height = height;
+    return SUCCESS;
 }
 
-// Remove a chunk of the room to make a non-rectangular shaped room
-// startRow, endRow, startCol, endCol are indices of positions
+// Remove a rectangle from the room
+// coordinates of the rectangle represent positions (indices)
+// to remove from the room
 // to remove the chunk
-void remove_tiles(ROOM *room, int startRow, int endRow, int startCol, int endCol)
+void remove_tiles(ROOM *room, RECTANGLE tiles_to_remove)
 {
+    // Get coordinates of both corners of the rectangle
+    // to remove part of the room
     int room_width = room->width;
+    int start_row = tiles_to_remove.first_corner.row;
+    int start_col = tiles_to_remove.first_corner.col;
+    int end_row = tiles_to_remove.last_corner.row;
+    int end_col = tiles_to_remove.last_corner.col;
     int row, col;
     ROOM_TILE *tile;
-    int temp;
-
-    // Swap startRow and endRow
-    if (startRow > endRow)
-    {
-        temp = startRow;
-        startRow = endRow;
-        endRow = temp;
-    }
-
-    // Swap startCol and endCol
-    if (startCol > endCol)
-    {
-        temp = startCol;
-        startCol = endCol;
-        endCol = temp;
-    }
 
     // Mark tiles in the chunk as out of bound
-    for (row = startRow; row <= endRow; row++)
+    for (row = start_row; row <= end_row; row++)
     {
-        for (col = startCol; col <= endCol; col++)
+        for (col = start_col; col <= end_col; col++)
         {
             tile = &(room->tiles[row * room_width + col]);
             tile->tile_char = ' ';
@@ -193,11 +189,11 @@ int add_doors(ROOM *source, ROOM *dest)
 {
     ROOM_TILE *tile;
     int attempt;
-    attempt = try_get_random_wall(source, tile);
+    attempt = get_random_wall(source, tile);
     if (attempt == ERROR)
         return ERROR;
     create_door(tile->door, tile, dest);
-    attempt = try_get_random_wall(dest, tile);
+    attempt = get_random_wall(dest, tile);
     if (attempt == ERROR)
         return ERROR;
     create_door(tile->door, tile, source);
@@ -227,7 +223,7 @@ void create_tile(ROOM_TILE *tile, const unsigned char symbol, TILE_TYPE type)
 }
 
 // Get a random non-corner wall from the room
-int try_get_random_wall(const ROOM *room, ROOM_TILE *tile)
+int get_random_wall(const ROOM *room, ROOM_TILE *tile)
 {
     int room_width = room->width;
     int room_height = room->height;

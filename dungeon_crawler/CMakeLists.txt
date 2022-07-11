@@ -4,9 +4,13 @@ project(DungeonCrawler VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_executable(DungeonCrawler main.c room.h room.c game.h game.c utility.h utility.c)
-add_executable(item.h item.c)
-add_executable(light.h light.c)
+add_executable(DungeonCrawler main.c
+room.h room.c 
+game.h game.c 
+utility.h utility.c 
+item.h item.c 
+light.h light.c 
+exception.h exception.c)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

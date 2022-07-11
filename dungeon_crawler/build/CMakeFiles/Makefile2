@@ -63,8 +63,6 @@ CMAKE_BINARY_DIR = C:\_dev\C\DungeonCrawler\dungeon_crawler\build
 
 # The main recursive "all" target.
 all: CMakeFiles/DungeonCrawler.dir/all
-all: CMakeFiles/item.h.dir/all
-all: CMakeFiles/light.h.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -101,8 +99,6 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/DungeonCrawler.dir/clean
-clean: CMakeFiles/item.h.dir/clean
-clean: CMakeFiles/light.h.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -840,12 +836,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 CMakeFiles/DungeonCrawler.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target DungeonCrawler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target DungeonCrawler"
 .PHONY : CMakeFiles/DungeonCrawler.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DungeonCrawler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/DungeonCrawler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 0
 .PHONY : CMakeFiles/DungeonCrawler.dir/rule
@@ -858,58 +854,6 @@ DungeonCrawler: CMakeFiles/DungeonCrawler.dir/rule
 CMakeFiles/DungeonCrawler.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/clean
 .PHONY : CMakeFiles/DungeonCrawler.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/item.h.dir
-
-# All Build rule for target.
-CMakeFiles/item.h.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=6,7 "Built target item.h"
-.PHONY : CMakeFiles/item.h.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/item.h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/item.h.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 0
-.PHONY : CMakeFiles/item.h.dir/rule
-
-# Convenience name for target.
-item.h: CMakeFiles/item.h.dir/rule
-.PHONY : item.h
-
-# clean rule for target.
-CMakeFiles/item.h.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/clean
-.PHONY : CMakeFiles/item.h.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/light.h.dir
-
-# All Build rule for target.
-CMakeFiles/light.h.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\light.h.dir\build.make CMakeFiles/light.h.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\light.h.dir\build.make CMakeFiles/light.h.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=8,9 "Built target light.h"
-.PHONY : CMakeFiles/light.h.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/light.h.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/light.h.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles 0
-.PHONY : CMakeFiles/light.h.dir/rule
-
-# Convenience name for target.
-light.h: CMakeFiles/light.h.dir/rule
-.PHONY : light.h
-
-# clean rule for target.
-CMakeFiles/light.h.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\light.h.dir\build.make CMakeFiles/light.h.dir/clean
-.PHONY : CMakeFiles/light.h.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

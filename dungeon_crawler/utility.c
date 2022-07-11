@@ -5,6 +5,33 @@
 
 time_t now;
 
+// Swap two values
+void swap_values(int *value1, int *value2)
+{
+    int temp = *value1;
+    *value1 = *value2;
+    *value2 = temp;
+}
+
+// Create a new RECTANGLE from to corners
+RECTANGLE create_rectangle(const COORD first_corner, const COORD last_corner)
+{
+    RECTANGLE rectangle;
+    rectangle.first_corner = first_corner;
+    rectangle.last_corner = last_corner;
+    return rectangle;
+}
+
+// Create a new COORD structure
+COORD create_coord(const int col, const int row)
+{
+    COORD coord;
+    coord.row = row;
+    coord.col = col;
+    return coord;
+}
+
+// Initialise random for later
 void initialise_random()
 {
     now = time(0);
@@ -19,7 +46,7 @@ int generate_number(int min, int max)
     return random_num;
 }
 
-// Remap a value between min2 and max2
+// Remap a value that is between min1 and max1 to min2 and max2
 int remape_value(int value, int min1, int max1, int min2, int max2)
 {
     int step1 = max1 - min1;

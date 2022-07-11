@@ -3,9 +3,8 @@
 
 int main()
 {
-    GAME my_game;
-    
     // Initialise the game
+    GAME my_game;
     create_game(&my_game);
 
     // Play the game

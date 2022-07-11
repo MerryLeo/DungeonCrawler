@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DungeonCrawler.dir/exception.c.obj"
+  "CMakeFiles/DungeonCrawler.dir/exception.c.obj.d"
   "CMakeFiles/DungeonCrawler.dir/game.c.obj"
   "CMakeFiles/DungeonCrawler.dir/game.c.obj.d"
+  "CMakeFiles/DungeonCrawler.dir/item.c.obj"
+  "CMakeFiles/DungeonCrawler.dir/item.c.obj.d"
+  "CMakeFiles/DungeonCrawler.dir/light.c.obj"
+  "CMakeFiles/DungeonCrawler.dir/light.c.obj.d"
   "CMakeFiles/DungeonCrawler.dir/main.c.obj"
   "CMakeFiles/DungeonCrawler.dir/main.c.obj.d"
   "CMakeFiles/DungeonCrawler.dir/room.c.obj"

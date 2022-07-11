@@ -2,8 +2,6 @@
 #define UTILITY_H
 
 // Useful define
-#define ERROR -1
-#define SUCCESS 1
 #define TRUE 1
 #define FALSE 0
 
@@ -29,11 +27,19 @@ typedef enum {
     down_right = 7
 } DIRECTION;
 
-typedef struct coord {
-    int x;
-    int y;
+typedef struct {
+    int row;
+    int col;
 } COORD;
 
+typedef struct {
+    COORD first_corner;
+    COORD last_corner;
+} RECTANGLE;
+
+RECTANGLE create_rectangle(COORD first_corner, COORD last_corner);
+COORD create_coord(const int col, const int row);
+void swap_values(int *value1, int *value2);
 void print_colored(char msg[], char color[]);
 void initialise_random();
 int generate_number(int min, int max);

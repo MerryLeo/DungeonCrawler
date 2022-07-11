@@ -522,31 +522,29 @@ DungeonCrawler/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/build
 .PHONY : DungeonCrawler/fast
 
-#=============================================================================
-# Target rules for targets named item.h
+exception.obj: exception.c.obj
+.PHONY : exception.obj
 
-# Build rule for target.
-item.h: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 item.h
-.PHONY : item.h
+# target to build an object file
+exception.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/exception.c.obj
+.PHONY : exception.c.obj
 
-# fast build rule for target.
-item.h/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/build
-.PHONY : item.h/fast
+exception.i: exception.c.i
+.PHONY : exception.i
 
-#=============================================================================
-# Target rules for targets named light.h
+# target to preprocess a source file
+exception.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/exception.c.i
+.PHONY : exception.c.i
 
-# Build rule for target.
-light.h: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 light.h
-.PHONY : light.h
+exception.s: exception.c.s
+.PHONY : exception.s
 
-# fast build rule for target.
-light.h/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\light.h.dir\build.make CMakeFiles/light.h.dir/build
-.PHONY : light.h/fast
+# target to generate assembly for a file
+exception.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/exception.c.s
+.PHONY : exception.c.s
 
 game.obj: game.c.obj
 .PHONY : game.obj
@@ -577,7 +575,7 @@ item.obj: item.c.obj
 
 # target to build an object file
 item.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/item.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/item.c.obj
 .PHONY : item.c.obj
 
 item.i: item.c.i
@@ -585,7 +583,7 @@ item.i: item.c.i
 
 # target to preprocess a source file
 item.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/item.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/item.c.i
 .PHONY : item.c.i
 
 item.s: item.c.s
@@ -593,7 +591,7 @@ item.s: item.c.s
 
 # target to generate assembly for a file
 item.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\item.h.dir\build.make CMakeFiles/item.h.dir/item.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/item.c.s
 .PHONY : item.c.s
 
 light.obj: light.c.obj
@@ -601,7 +599,7 @@ light.obj: light.c.obj
 
 # target to build an object file
 light.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\light.h.dir\build.make CMakeFiles/light.h.dir/light.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/light.c.obj
 .PHONY : light.c.obj
 
 light.i: light.c.i
@@ -609,7 +607,7 @@ light.i: light.c.i
 
 # target to preprocess a source file
 light.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\light.h.dir\build.make CMakeFiles/light.h.dir/light.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/light.c.i
 .PHONY : light.c.i
 
 light.s: light.c.s
@@ -617,7 +615,7 @@ light.s: light.c.s
 
 # target to generate assembly for a file
 light.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\light.h.dir\build.make CMakeFiles/light.h.dir/light.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/light.c.s
 .PHONY : light.c.s
 
 main.obj: main.c.obj
@@ -732,8 +730,9 @@ help:
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
 	@echo ... DungeonCrawler
-	@echo ... item.h
-	@echo ... light.h
+	@echo ... exception.obj
+	@echo ... exception.i
+	@echo ... exception.s
 	@echo ... game.obj
 	@echo ... game.i
 	@echo ... game.s

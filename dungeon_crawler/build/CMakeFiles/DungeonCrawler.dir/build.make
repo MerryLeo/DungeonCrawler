@@ -124,12 +124,57 @@ CMakeFiles/DungeonCrawler.dir/utility.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DungeonCrawler.dir/utility.c.s"
 	C:\MinGW\bin\mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\_dev\C\DungeonCrawler\dungeon_crawler\utility.c -o CMakeFiles\DungeonCrawler.dir\utility.c.s
 
+CMakeFiles/DungeonCrawler.dir/item.c.obj: CMakeFiles/DungeonCrawler.dir/flags.make
+CMakeFiles/DungeonCrawler.dir/item.c.obj: ../item.c
+CMakeFiles/DungeonCrawler.dir/item.c.obj: CMakeFiles/DungeonCrawler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/DungeonCrawler.dir/item.c.obj"
+	C:\MinGW\bin\mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DungeonCrawler.dir/item.c.obj -MF CMakeFiles\DungeonCrawler.dir\item.c.obj.d -o CMakeFiles\DungeonCrawler.dir\item.c.obj -c C:\_dev\C\DungeonCrawler\dungeon_crawler\item.c
+
+CMakeFiles/DungeonCrawler.dir/item.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DungeonCrawler.dir/item.c.i"
+	C:\MinGW\bin\mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\_dev\C\DungeonCrawler\dungeon_crawler\item.c > CMakeFiles\DungeonCrawler.dir\item.c.i
+
+CMakeFiles/DungeonCrawler.dir/item.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DungeonCrawler.dir/item.c.s"
+	C:\MinGW\bin\mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\_dev\C\DungeonCrawler\dungeon_crawler\item.c -o CMakeFiles\DungeonCrawler.dir\item.c.s
+
+CMakeFiles/DungeonCrawler.dir/light.c.obj: CMakeFiles/DungeonCrawler.dir/flags.make
+CMakeFiles/DungeonCrawler.dir/light.c.obj: ../light.c
+CMakeFiles/DungeonCrawler.dir/light.c.obj: CMakeFiles/DungeonCrawler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/DungeonCrawler.dir/light.c.obj"
+	C:\MinGW\bin\mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DungeonCrawler.dir/light.c.obj -MF CMakeFiles\DungeonCrawler.dir\light.c.obj.d -o CMakeFiles\DungeonCrawler.dir\light.c.obj -c C:\_dev\C\DungeonCrawler\dungeon_crawler\light.c
+
+CMakeFiles/DungeonCrawler.dir/light.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DungeonCrawler.dir/light.c.i"
+	C:\MinGW\bin\mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\_dev\C\DungeonCrawler\dungeon_crawler\light.c > CMakeFiles\DungeonCrawler.dir\light.c.i
+
+CMakeFiles/DungeonCrawler.dir/light.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DungeonCrawler.dir/light.c.s"
+	C:\MinGW\bin\mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\_dev\C\DungeonCrawler\dungeon_crawler\light.c -o CMakeFiles\DungeonCrawler.dir\light.c.s
+
+CMakeFiles/DungeonCrawler.dir/exception.c.obj: CMakeFiles/DungeonCrawler.dir/flags.make
+CMakeFiles/DungeonCrawler.dir/exception.c.obj: ../exception.c
+CMakeFiles/DungeonCrawler.dir/exception.c.obj: CMakeFiles/DungeonCrawler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/DungeonCrawler.dir/exception.c.obj"
+	C:\MinGW\bin\mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DungeonCrawler.dir/exception.c.obj -MF CMakeFiles\DungeonCrawler.dir\exception.c.obj.d -o CMakeFiles\DungeonCrawler.dir\exception.c.obj -c C:\_dev\C\DungeonCrawler\dungeon_crawler\exception.c
+
+CMakeFiles/DungeonCrawler.dir/exception.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DungeonCrawler.dir/exception.c.i"
+	C:\MinGW\bin\mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\_dev\C\DungeonCrawler\dungeon_crawler\exception.c > CMakeFiles\DungeonCrawler.dir\exception.c.i
+
+CMakeFiles/DungeonCrawler.dir/exception.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DungeonCrawler.dir/exception.c.s"
+	C:\MinGW\bin\mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\_dev\C\DungeonCrawler\dungeon_crawler\exception.c -o CMakeFiles\DungeonCrawler.dir\exception.c.s
+
 # Object files for target DungeonCrawler
 DungeonCrawler_OBJECTS = \
 "CMakeFiles/DungeonCrawler.dir/main.c.obj" \
 "CMakeFiles/DungeonCrawler.dir/room.c.obj" \
 "CMakeFiles/DungeonCrawler.dir/game.c.obj" \
-"CMakeFiles/DungeonCrawler.dir/utility.c.obj"
+"CMakeFiles/DungeonCrawler.dir/utility.c.obj" \
+"CMakeFiles/DungeonCrawler.dir/item.c.obj" \
+"CMakeFiles/DungeonCrawler.dir/light.c.obj" \
+"CMakeFiles/DungeonCrawler.dir/exception.c.obj"
 
 # External object files for target DungeonCrawler
 DungeonCrawler_EXTERNAL_OBJECTS =
@@ -138,11 +183,14 @@ DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/main.c.obj
 DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/room.c.obj
 DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/game.c.obj
 DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/utility.c.obj
+DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/item.c.obj
+DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/light.c.obj
+DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/exception.c.obj
 DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/build.make
 DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/linklibs.rsp
 DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/objects1.rsp
 DungeonCrawler.exe: CMakeFiles/DungeonCrawler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable DungeonCrawler.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\_dev\C\DungeonCrawler\dungeon_crawler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable DungeonCrawler.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DungeonCrawler.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
