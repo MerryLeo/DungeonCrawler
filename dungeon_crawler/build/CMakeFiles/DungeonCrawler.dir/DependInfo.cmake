@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/_dev/C/DungeonCrawler/dungeon_crawler/dungeon.c" "CMakeFiles/DungeonCrawler.dir/dungeon.c.obj" "gcc" "CMakeFiles/DungeonCrawler.dir/dungeon.c.obj.d"
   "C:/_dev/C/DungeonCrawler/dungeon_crawler/exception.c" "CMakeFiles/DungeonCrawler.dir/exception.c.obj" "gcc" "CMakeFiles/DungeonCrawler.dir/exception.c.obj.d"
   "C:/_dev/C/DungeonCrawler/dungeon_crawler/game.c" "CMakeFiles/DungeonCrawler.dir/game.c.obj" "gcc" "CMakeFiles/DungeonCrawler.dir/game.c.obj.d"
   "C:/_dev/C/DungeonCrawler/dungeon_crawler/item.c" "CMakeFiles/DungeonCrawler.dir/item.c.obj" "gcc" "CMakeFiles/DungeonCrawler.dir/item.c.obj.d"

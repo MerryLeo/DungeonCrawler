@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Dev/C/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\main.c.obj -c C:\\Dev\\C\\DungeonCrawler\\dungeon_crawler\\main.c",
+  "file": "C:/Dev/C/DungeonCrawler/dungeon_crawler/main.c"
+},
+{
+  "directory": "C:/Dev/C/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\room.c.obj -c C:\\Dev\\C\\DungeonCrawler\\dungeon_crawler\\room.c",
+  "file": "C:/Dev/C/DungeonCrawler/dungeon_crawler/room.c"
+},
+{
+  "directory": "C:/Dev/C/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\utility.c.obj -c C:\\Dev\\C\\DungeonCrawler\\dungeon_crawler\\utility.c",
+  "file": "C:/Dev/C/DungeonCrawler/dungeon_crawler/utility.c"
+},
+{
+  "directory": "C:/Dev/C/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\item.c.obj -c C:\\Dev\\C\\DungeonCrawler\\dungeon_crawler\\item.c",
+  "file": "C:/Dev/C/DungeonCrawler/dungeon_crawler/item.c"
+},
+{
+  "directory": "C:/Dev/C/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\light.c.obj -c C:\\Dev\\C\\DungeonCrawler\\dungeon_crawler\\light.c",
+  "file": "C:/Dev/C/DungeonCrawler/dungeon_crawler/light.c"
+},
+{
+  "directory": "C:/Dev/C/DungeonCrawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\exception.c.obj -c C:\\Dev\\C\\DungeonCrawler\\dungeon_crawler\\exception.c",
+  "file": "C:/Dev/C/DungeonCrawler/dungeon_crawler/exception.c"
+}
+]

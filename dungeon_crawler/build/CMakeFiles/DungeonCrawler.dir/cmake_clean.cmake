@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DungeonCrawler.dir/dungeon.c.obj"
+  "CMakeFiles/DungeonCrawler.dir/dungeon.c.obj.d"
   "CMakeFiles/DungeonCrawler.dir/exception.c.obj"
   "CMakeFiles/DungeonCrawler.dir/exception.c.obj.d"
   "CMakeFiles/DungeonCrawler.dir/game.c.obj"

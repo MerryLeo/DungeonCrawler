@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\light.h.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\light.h.dir/objects.a @CMakeFiles\light.h.dir\objects1.rsp
-C:\MinGW\bin\mingw32-gcc.exe -g -Wl,--whole-archive CMakeFiles\light.h.dir/objects.a -Wl,--no-whole-archive -o light.h.exe -Wl,--out-implib,liblight.h.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\light.h.dir\linklibs.rsp

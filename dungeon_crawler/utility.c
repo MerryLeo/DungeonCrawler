@@ -13,10 +13,15 @@ void swap_values(int *value1, int *value2)
     *value2 = temp;
 }
 
-// Create a new RECTANGLE from to corners
-RECTANGLE create_rectangle(const COORD first_corner, const COORD last_corner)
+// Create a new RECTANGLE from two corners
+RECTANGLE create_rectangle(int first_col, int first_row, int last_col, int last_row)
 {
     RECTANGLE rectangle;
+    COORD first_corner, last_corner;
+    first_corner.row = first_row;
+    first_corner.col = first_col;
+    last_corner.row = last_row;
+    last_corner.col = last_col;
     rectangle.first_corner = first_corner;
     rectangle.last_corner = last_corner;
     return rectangle;
@@ -39,7 +44,7 @@ void initialise_random()
 }
 
 // Generate number between min and max inclusive
-int generate_number(int min, int max)
+int generate_number(const int min, const int max)
 {
     int random_num = rand() % max + 1;
     random_num = remape_value(random_num, 0, max, min, max);
@@ -47,7 +52,7 @@ int generate_number(int min, int max)
 }
 
 // Remap a value that is between min1 and max1 to min2 and max2
-int remape_value(int value, int min1, int max1, int min2, int max2)
+int remape_value(const int value, const int min1, const int max1, const int min2, const int max2)
 {
     int step1 = max1 - min1;
     int step2 = max2 - min2;
@@ -56,7 +61,7 @@ int remape_value(int value, int min1, int max1, int min2, int max2)
 }
 
 // Print text with a color
-void print_colored(char msg[], char color[])
+void print_colored(const char *msg, const char *color)
 {
     printf(color);
     printf(msg);

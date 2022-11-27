@@ -33,5 +33,10 @@
   "directory": "C:/_dev/C/DungeonCrawler/dungeon_crawler/build",
   "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\exception.c.obj -c C:\\_dev\\C\\DungeonCrawler\\dungeon_crawler\\exception.c",
   "file": "C:/_dev/C/DungeonCrawler/dungeon_crawler/exception.c"
+},
+{
+  "directory": "C:/_dev/C/DungeonCrawler/dungeon_crawler/build",
+  "command": "C:\\MinGW\\bin\\mingw32-gcc.exe   -g -o CMakeFiles\\DungeonCrawler.dir\\dungeon.c.obj -c C:\\_dev\\C\\DungeonCrawler\\dungeon_crawler\\dungeon.c",
+  "file": "C:/_dev/C/DungeonCrawler/dungeon_crawler/dungeon.c"
 }
 ]

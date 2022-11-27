@@ -1,6 +1,8 @@
 #ifndef UTILITY_H
 #define UTILITY_H
 
+#define PATH "../Saves/debug.txt"
+
 // Useful define
 #define TRUE 1
 #define FALSE 0
@@ -37,13 +39,13 @@ typedef struct {
     COORD last_corner;
 } RECTANGLE;
 
-RECTANGLE create_rectangle(COORD first_corner, COORD last_corner);
+RECTANGLE create_rectangle(int first_col, int first_row, int last_col, int last_row);
 COORD create_coord(const int col, const int row);
 void swap_values(int *value1, int *value2);
-void print_colored(char msg[], char color[]);
+void print_colored(const char *msg, const char *color);
 void initialise_random();
-int generate_number(int min, int max);
-int remape_value(int value, int min1, int max1, int min2, int max2);
+int generate_number(const int min, const int max);
+int remape_value(const int value, const int min1, const int max1, const int min2, const int max2);
 int clamp01(int value);
 
 #endif

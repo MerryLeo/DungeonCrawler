@@ -5,8 +5,7 @@ include(CTest)
 enable_testing()
 
 add_executable(DungeonCrawler main.c
-room.h room.c 
-game.h game.c 
+room.h room.c
 utility.h utility.c 
 item.h item.c 
 light.h light.c 

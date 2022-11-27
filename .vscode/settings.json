@@ -1,10 +1,6 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled",
+    "cmake.sourceDirectory": "${workspaceFolder}/dungeon_crawler",
     "files.associations": {
-        "stdlib.h": "c",
-        "map.h": "c",
-        "stdio.h": "c",
-        "room.h": "c",
-        "time.h": "c"
+        "stdlib.h": "c"
     }
 }

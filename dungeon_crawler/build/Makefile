@@ -522,6 +522,30 @@ DungeonCrawler/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/build
 .PHONY : DungeonCrawler/fast
 
+dungeon.obj: dungeon.c.obj
+.PHONY : dungeon.obj
+
+# target to build an object file
+dungeon.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/dungeon.c.obj
+.PHONY : dungeon.c.obj
+
+dungeon.i: dungeon.c.i
+.PHONY : dungeon.i
+
+# target to preprocess a source file
+dungeon.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/dungeon.c.i
+.PHONY : dungeon.c.i
+
+dungeon.s: dungeon.c.s
+.PHONY : dungeon.s
+
+# target to generate assembly for a file
+dungeon.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DungeonCrawler.dir\build.make CMakeFiles/DungeonCrawler.dir/dungeon.c.s
+.PHONY : dungeon.c.s
+
 exception.obj: exception.c.obj
 .PHONY : exception.obj
 
@@ -730,6 +754,9 @@ help:
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
 	@echo ... DungeonCrawler
+	@echo ... dungeon.obj
+	@echo ... dungeon.i
+	@echo ... dungeon.s
 	@echo ... exception.obj
 	@echo ... exception.i
 	@echo ... exception.s

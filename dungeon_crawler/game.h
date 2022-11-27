@@ -1,4 +1,5 @@
 #include "room.h"
+#include "dungeon.h"
 
 #ifndef GAME_H
 #define GAME_H
@@ -9,10 +10,10 @@
 #define WELCOME "Welcome to my dungeon crawler!\n\n"
 
 typedef struct {
-    ROOM rooms[NUMBER_OF_ROOM];
+    DUNGEON *dungeon;
 } GAME;
 
-void create_game(GAME *game);
+GAME* create_game();
 void print_map(GAME game);
 void play_game(GAME *game);
 void end_game(GAME *game);
